@@ -26,8 +26,8 @@ Any departures from the above will require implementation/use of the [headscale 
 
 ## The Club's limitations
 
-* (proposed) The user must be an member of the TC4 Cyber Club.  In other words, must attend either the in-person or virtual meetings.
-* (proposed) If a user doesn't participate (e.g., attend) Cyber Club meetings for six months, they will be placed on a tentative list.  If the number of users reaches 25, and a new member wants to join, the inactiive user's account may be removed from the tc4-net roster to allow the new user to join the tailnet.  As of 1 Dec 2022, active participation in the weekly meetings averages around half of the Tailscale limit (somewhere around 10-12 people).
+* (proposed) The user must be an member of the TC4 Cyber Club.  In other words, the user must attend either the in-person or virtual meetings.
+* (proposed) If a user doesn't participate in (i.e., attend) Cyber Club meetings for six months, they will be placed on a tentative list.  If the number of users reaches 25, and a new member wants to join, the inactiive user's account may be removed from the tc4-net roster to allow the new user to join the tailnet.  As of 1 Dec 2022, active participation in the weekly meetings averages around half of the Tailscale limit (somewhere around 10-12 people).
 * (proposed) Nodes added to the archicture must be approved by the Cyber Club membership AND the Cyber Club's Faculty Advisor. Information about each of the architecture nodes (including ownership and admin info) will be documented on the Github page or on a page within the (proposed) internal Gitea service.
 * (proposed) To avoid achitecture "rot" experienced in the past, each server/service within the tailnet will have more than one user with admin rights.  These admins will be documened on the (proposed) internal Gitea service.
 
