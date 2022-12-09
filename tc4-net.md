@@ -46,6 +46,18 @@ The current list of tailnet nodes/services:
 * The "tc4-net" name was chosen for the tailnet because most of the variants of "TC4" were unavailable.  "tc4-net" was the shortest, most applicable name available.
 * The firewall for the Club's architecture has been added to the tc4-net tailnet.  The firewall module was recently created by [Christopher McDonald](https://www.netgate.com/blog/tailscale-on-pfsense-software).  As of 4 Dec 2022, the version number for this package is v0.1.0.  This may require modification of the firewall as new versions are released.  The Cyber Club's firewall counts as a tailnet device, but servers residing behind that firewall (apparently) do not.
 
+## Joining TC4-Net
+
+* If you don't already have one, or don't want to have your existing one associated with use of the VPN, create a new Github account and provide the account name to one of the Team owners (for now, Tim).  In the future, Team owners will likely include the club president, the faculty advisor, and the tech assist.  They will add you to the Team listing.
+* While logged into that Github account, install the Tailscale software.
+* You can then run "tailscale up" to join the VPN (the software checks your Github account against the Team list and joins you to the tailnet).  If this is your first time connecting, the software will provide you with an URL to open in your browser, to join the tailnet.
+* When you want to disconnect from the VPN, run "tailscale down".
+* If you want to check VPN status, run "tailscale status".
+
+## Being safe
+* Before you log into the VPN with a workstation, you may want to review what services are listening on the workstation.  For Linux machines, it is quite easy to review and disable the services which shouldn't be accessed by third parties.
+
+
 ## Sources
 
 * https://tailscale.com/kb/
@@ -60,3 +72,4 @@ The current list of tailnet nodes/services:
 ## Revisions to this document
 
 * Initial version and miscellaneous revisions - 4 Dec 2022 - Tim K. (joatd)
+* Added how to join section - 9 Dec 2022 - Tim K (joatd)
