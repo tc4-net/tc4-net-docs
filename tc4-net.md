@@ -32,6 +32,7 @@ Any departures from the above Tailscale limitations will require implementation/
 * (proposed) If a user doesn't participate in (i.e., attend) Cyber Club meetings for six months, they will be placed on a tentative list.  If the number of users reaches 25, and a new member wants to join, the inactiive user's account may be removed from the tc4-net roster to allow the new user to join the tailnet.  As of 1 Dec 2022, active participation in the weekly meetings averages around half of the Tailscale limit (somewhere around 10-12 people).  The limit of 25 users is Tailscale-imposed.  As stated earlier, headscale may become a replacement for the Tailscale controller if there are more than 25 active users.
 * (proposed) Other than users' client, adding service nodes to the club archicture must be approved by the Cyber Club membership AND the Cyber Club's Faculty Advisor. Information about each of the architecture nodes (including ownership and admin info) will be documented on the Github page or on a page within the (proposed) internal Gitea service.
 * (proposed) To avoid achitecture "rot" experienced in the past, each server/service within the tailnet will have more than one user with admin rights.  These admins will be documened on the (proposed) internal Gitea service.
+* (proposed) Don't alter other people's code, configuration, services, or general jank without prior permission.
 
 ## Tentative services within the tc4-net tailnet
 
@@ -50,15 +51,17 @@ The current list of tailnet nodes/services:
 
 ## Joining TC4-Net
 
-* If you don't already have one, or don't want to have your existing one associated with use of the VPN, create a new Github account and provide the account name to one of the Github team admins (ask on Discord if you don't know who they are).  They will add you to the Team listing.  
+* If you don't already have one, or don't want to have your existing one associated with use of the VPN, create a new Github account and provide the account name to one of the Github team admins (ask on Discord if you don't know who they are).  They will cause Github to send you a team invite.  Accept that invite.
 * While logged into that Github account, [install the Tailscale software](https://tailscale.com/kb/installation/).
 * You can then run "tailscale up" to join the VPN (the software checks your Github account against the Team list and joins you to the tailnet).  If this is your first time connecting, the software will provide you with an URL to open in your browser, to join the tailnet.
 * When you want to disconnect from the VPN, run "tailscale down".
 * If you want to check VPN status, run "tailscale status".
+* (optional) By default, VPN keys expire every 90 (or 180) days. To avoid having to periodically regenerate keys, ask one of the admins to disable key expiry for your account.
 
 ## Being safe
 
 * Before you log into the VPN with a workstation, you may want to review what services are listening on the workstation.  For Linux machines, it is quite easy to review and disable the services which shouldn't be accessed by third parties.
+* For workstation users, it's notable that most host-based firewalls will not prevent connections from other Tailscale users.  This is because the VPN operates in user space, vice kernel space.  Experimentation will be needed to determine how to control access to (or disabling) sensitive workstation services.
 
 ## Sources
 
