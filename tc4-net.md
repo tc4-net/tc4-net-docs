@@ -50,8 +50,8 @@ The current list of tailnet nodes/services:
 
 ## Joining TC4-Net
 
-* If you don't already have one, or don't want to have your existing one associated with use of the VPN, create a new Github account and provide the account name to one of the Team owners (for now, Tim).  In the future, Team owners will likely include the club president, the faculty advisor, and the tech assist.  They will add you to the Team listing.
-* While logged into that Github account, install the Tailscale software.
+* If you don't already have one, or don't want to have your existing one associated with use of the VPN, create a new Github account and provide the account name to one of the Github team admins (ask on Discord if you don't know who they are).  They will add you to the Team listing.  
+* While logged into that Github account, [install the Tailscale software](https://tailscale.com/kb/installation/).
 * You can then run "tailscale up" to join the VPN (the software checks your Github account against the Team list and joins you to the tailnet).  If this is your first time connecting, the software will provide you with an URL to open in your browser, to join the tailnet.
 * When you want to disconnect from the VPN, run "tailscale down".
 * If you want to check VPN status, run "tailscale status".
@@ -73,5 +73,6 @@ The current list of tailnet nodes/services:
 
 ## Revisions to this document
 
+* Added how to join section and software install link - 9 Dec 2022 - Tim K (joatd)
 * Initial version and miscellaneous revisions - 4 Dec 2022 - Tim K. (joatd)
-* Added how to join section - 9 Dec 2022 - Tim K (joatd)
+
