@@ -23,3 +23,6 @@ In no particular order:
 
 ## Sources
 * https://tailscale.com/kb/1193/tailscale-ssh/?q=systemd#key-management-and-distribution
+
+## Discussions needed in this article
+* Why does "tailscale ssh root@cf1" work when accessing root (via normal ssh) is blocked?  Can it be disabled? If so, how?
